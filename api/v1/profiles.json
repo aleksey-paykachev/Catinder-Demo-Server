@@ -1,16 +1,18 @@
 [
 	{
 		"uid": "Some-Unique-Id-1",
-		"name": "Barsik", "age": 3,
-		"breed": "Breed-Name",
-		"photosNames": [],
+		"name": "Барсик",
+		"age": 3,
+		"breed": "",
+		"photosNames": ["Cat_Barsik"],
 		"description": "Cat Description"
 	},
 	{
 		"uid": "Some-Unique-Id-2",
-		"name": "Pushok", "age": 4,
+		"name": "Боб",
+		"age": 4,
 		"breed": "",
-		"photosNames": [],
+		"photosNames": ["Cat_Bob_3", "Cat_Bob_2"],
 		"description": "Cat Description"
 	}
 ]
