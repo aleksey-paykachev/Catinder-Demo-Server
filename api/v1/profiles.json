@@ -1,4 +1,16 @@
 [
-	{"id": 1, "name": "Barsik"},
-	{"id": 2, "name": "Pushok"}
+	{
+		"uid": "Some-Unique-Id-1",
+		"name": "Barsik", "age": 3,
+		"breed": "Breed-Name",
+		"photosNames": [],
+		"description": "Cat Description"
+	},
+	{
+		"uid": "Some-Unique-Id-2",
+		"name": "Pushok", "age": 4,
+		"breed": "",
+		"photosNames": [],
+		"description": "Cat Description"
+	}
 ]
