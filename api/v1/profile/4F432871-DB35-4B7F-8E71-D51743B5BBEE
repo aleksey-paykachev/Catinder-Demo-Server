@@ -1,0 +1,8 @@
+{
+	"uid": "4F432871-DB35-4B7F-8E71-D51743B5BBEE",
+	"name": "Боб",
+	"age": 10,
+	"breed": "unknown",
+	"photosNames": ["Cat_Bob_1", "Cat_Bob_2", "Cat_Bob_3"],
+	"description": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?"
+}
