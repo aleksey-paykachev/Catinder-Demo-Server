@@ -3,6 +3,6 @@
 	"name": "Боб",
 	"age": 10,
 	"breed": "unknown",
-	"photosNames": ["Cat_Bob_1", "Cat_Bob_2", "Cat_Bob_3"],
+	"photosNames": ["Bob_1.jpg", "Bob_2.jpg", "Bob_3.jpg"],
 	"description": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?"
 }
