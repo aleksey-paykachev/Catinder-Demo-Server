@@ -2,7 +2,6 @@
 	"uid": "4F432871-DB35-4B7F-8E71-D51743B5BBEE",
 	"name": "Боб",
 	"age": 10,
-	"breed": "unknown",
 	"photosNames": ["Bob_1.jpg", "Bob_2.jpg", "Bob_3.jpg"],
 	"description": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?"
 }
