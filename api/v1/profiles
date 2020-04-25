@@ -40,5 +40,19 @@
 		"age": 7,
 		"photosNames": ["Smushball_1.jpg", "Smushball_2.jpg", "Smushball_3.jpg", "Smushball_4.jpg"],
 		"description": "Мой хозяин — миллионер. У меня есть всё, что я пожелаю. А сейчас я желаю, чтобы мне почесали животик."
+	},
+	{
+		"uid": "4D228D25-3602-4BD9-B1DC-CE0E1D1D974F",
+		"name": "Гамильтон",
+		"age": 6,
+		"photosNames": ["Hamilton_the_hipster_cat_1.jpg", "Hamilton_the_hipster_cat_2.jpg", "Hamilton_the_hipster_cat_3.jpg", "Hamilton_the_hipster_cat_4.jpg"],
+		"description": "Меня назвали в честь Александра Гамильтона, революционного деятеля США. А ещё я хипстер."
+	},
+	{
+		"uid": "9A17B3AB-8CF8-4671-802A-16466F865641",
+		"name": "Альберт",
+		"age": 2,
+		"photosNames": ["Albertbabycat_1.jpg", "Albertbabycat_2.jpg", "Albertbabycat_3.jpg"],
+		"description": "Свободная касса!"
 	}
 ]
