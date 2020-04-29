@@ -45,14 +45,35 @@
 		"uid": "4D228D25-3602-4BD9-B1DC-CE0E1D1D974F",
 		"name": "Гамильтон",
 		"age": 6,
-		"photosNames": ["Hamilton_the_hipster_cat_1.jpg", "Hamilton_the_hipster_cat_2.jpg", "Hamilton_the_hipster_cat_3.jpg", "Hamilton_the_hipster_cat_4.jpg"],
+		"photosNames": ["Hamilton_1.jpg", "Hamilton_2.jpg", "Hamilton_3.jpg", "Hamilton_4.jpg"],
 		"description": "Меня назвали в честь Александра Гамильтона, революционного деятеля США. А ещё я хипстер."
 	},
 	{
 		"uid": "9A17B3AB-8CF8-4671-802A-16466F865641",
 		"name": "Альберт",
 		"age": 2,
-		"photosNames": ["Albertbabycat_1.jpg", "Albertbabycat_2.jpg", "Albertbabycat_3.jpg"],
+		"photosNames": ["Albert_1.jpg"],
 		"description": "Свободная касса!"
+	},
+	{
+		"uid": "0C4CF4A2-6A45-4275-9F29-28951C1A317A",
+		"name": "Мару",
+		"age": 12,
+		"photosNames": ["Maru_1.jpg", "Maru_2.jpg", "Maru_3.jpg", "Maru_4.jpg", "Maru_5.jpg", "Maru_6.jpg"],
+		"description": "Люблю залезать во всякие коробочки."
+	},
+	{
+		"uid": "C7271703-FC3F-4F63-BC62-DC1A7745896A",
+		"name": "Коби",
+		"age": 7,
+		"photosNames": ["Coby_1.jpg", "Coby_2.jpg", "Coby_3.jpg", "Coby_4.jpg", "Coby_5.jpg", "Coby_6.jpg"],
+		"description": "Люблю строить из себя деловую колбасу."
+	},
+	{
+		"uid": "997EA898-99E0-46D2-AB79-9FEF6BBC70C0",
+		"name": "Нала",
+		"age": 6,
+		"photosNames": ["Nala_1.jpg", "Nala_2.jpg", "Nala_3.jpg", "Nala_4.jpg", "Nala_5.jpg", "Nala_6.jpg"],
+		"description": "Люблю показывать всем язык."
 	}
 ]
