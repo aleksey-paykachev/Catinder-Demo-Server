@@ -1,0 +1,52 @@
+[
+	{
+		"matchDate": "2020-04-21T18:25:43+03:00",
+		"profile1": {
+			"uid": "0C4CF4A2-6A45-4275-9F29-28951C1A317A",
+			"name": "Мару",
+			"age": 12,
+			"photosNames": ["Maru_1.jpg", "Maru_2.jpg", "Maru_3.jpg", "Maru_4.jpg", "Maru_5.jpg", "Maru_6.jpg"],
+			"shortDescription": "Люблю залезать во всякие коробочки.",
+			"extendedDescription": "И не только коробочки."
+		},
+		"profile2": {
+			"uid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+			"name": "Вафля",
+			"age": 5,
+			"photosNames": ["Waffles_1.jpg", "Waffles_2.jpg", "Waffles_3.jpg", "Waffles_4.jpg"],
+			"shortDescription": "Люблю наряжаться во всякие дурацкие костюмы.",
+			"extendedDescription": ""
+		},
+		"lastMessage": {
+			"date": "2020-04-21T18:28:32+03:00",
+			"senderUid": "0C4CF4A2-6A45-4275-9F29-28951C1A317A",
+			"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+			"text": "Привет."
+		}
+	},
+	{
+		"matchDate": "2020-04-20T17:21:23+03:00",
+		"profile1": {
+			"uid": "4F432871-DB35-4B7F-8E71-D51743B5BBEE",
+			"name": "Боб",
+			"age": 10,
+			"photosNames": ["Bob_1.jpg", "Bob_2.jpg", "Bob_3.jpg"],
+			"shortDescription": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?",
+			"extendedDescription": ""
+		},
+		"profile2": {
+			"uid": "0C4CF4A2-6A45-4275-9F29-28951C1A317A",
+			"name": "Мару",
+			"age": 12,
+			"photosNames": ["Maru_1.jpg", "Maru_2.jpg", "Maru_3.jpg", "Maru_4.jpg", "Maru_5.jpg", "Maru_6.jpg"],
+			"shortDescription": "Люблю залезать во всякие коробочки.",
+			"extendedDescription": "И не только коробочки."
+		},
+		"lastMessage": {
+			"date": "2020-04-22T19:05:49+03:00",
+			"senderUid": "4F432871-DB35-4B7F-8E71-D51743B5BBEE",
+			"receiverUid": "0C4CF4A2-6A45-4275-9F29-28951C1A317A",
+			"text": "Как у тебя дела? Что-то давно не пишешь. Нашёл себе нового кота что ли?"
+		}
+	}
+]
