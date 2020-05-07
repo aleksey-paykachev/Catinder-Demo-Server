@@ -3,5 +3,6 @@
 	"name": "Боб",
 	"age": 10,
 	"photosNames": ["Bob_1.jpg", "Bob_2.jpg", "Bob_3.jpg"],
-	"description": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?"
+	"shortDescription": "Про меня сняли фильм, и написали несколько книг. А чего добился ты?",
+	"extendedDescription": ""
 }

@@ -3,5 +3,6 @@
 	"name": "Вафля",
 	"age": 5,
 	"photosNames": ["Waffles_1.jpg", "Waffles_2.jpg", "Waffles_3.jpg", "Waffles_4.jpg"],
-	"description": "Люблю наряжаться во всякие дурацкие костюмы."
+	"shortDescription": "Люблю наряжаться во всякие дурацкие костюмы.",
+	"extendedDescription": ""
 }

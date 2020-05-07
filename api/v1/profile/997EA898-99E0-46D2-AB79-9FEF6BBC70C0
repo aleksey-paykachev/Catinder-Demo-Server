@@ -3,5 +3,6 @@
 	"name": "Нала",
 	"age": 6,
 	"photosNames": ["Nala_1.jpg", "Nala_2.jpg", "Nala_3.jpg", "Nala_4.jpg", "Nala_5.jpg", "Nala_6.jpg"],
-	"description": "Люблю показывать всем язык."
+	"shortDescription": "Люблю показывать всем язык.",
+	"extendedDescription": "Говорят, что это неприлично, но мне всё равно. Напиши мне что-нибудь, и я тоже покажу тебе язык."
 }

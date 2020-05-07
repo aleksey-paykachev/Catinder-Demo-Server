@@ -3,5 +3,6 @@
 	"name": "Смашбол",
 	"age": 7,
 	"photosNames": ["Smushball_1.jpg", "Smushball_2.jpg", "Smushball_3.jpg", "Smushball_4.jpg"],
-	"description": "Мой хозяин — миллионер. У меня есть всё, что я пожелаю. А сейчас я желаю, чтобы мне почесали животик."
+	"shortDescription": "Мой хозяин мультимиллионер, и у меня есть всё, что я пожелаю.",
+	"extendedDescription": "А сейчас я желаю, чтобы мне почесали животик."
 }

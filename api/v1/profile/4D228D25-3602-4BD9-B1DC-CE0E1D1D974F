@@ -3,5 +3,6 @@
 	"name": "Гамильтон",
 	"age": 6,
 	"photosNames": ["Hamilton_1.jpg", "Hamilton_2.jpg", "Hamilton_3.jpg", "Hamilton_4.jpg"],
-	"description": "Меня назвали в честь Александра Гамильтона, революционного деятеля США. А ещё я хипстер."
+	"shortDescription": "Я кот хипстер.",
+	"extendedDescription": "Кстати, меня назвали в честь Александра Гамильтона, революционного деятеля США."
 }
