@@ -1,0 +1,141 @@
+{
+	"swagger":"2.0",
+	"info":{
+		"description":"This is a description of demo server API for [Catinder app](https://github.com/aleksey-paykachev/Catinder) in OpenAPI format.",
+		"version":"v 1.0",
+		"title":"Catinder OpenAPI"
+	},
+	"host":"raw.githubusercontent.com",
+	"basePath":"/aleksey-paykachev/Catinder-Demo-Server/master/api/v1",
+	"tags":[
+		{
+			"name":"Profiles",
+			"description":"User profiles."
+		}
+	],
+	"schemes":[
+		"https"
+	],
+	"paths":{
+		"/profiles":{
+			"get":{
+				"tags":[
+					"Profiles"
+				],
+				"summary":"Get all profiles",
+				"description":"Get all not matched (new) profiles for currently logged in user.",
+				"operationId":"getAllProfiles",
+				"produces":[
+					"application/json"
+				],
+				"responses":{
+					"200":{
+						"description":"Successful operation",
+						"schema":{
+							"type":"array",
+							"items":{
+								"$ref":"#/definitions/Profile"
+							}
+						}
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/profile/{profileUid}":{
+			"get":{
+				"tags":[
+					"Profiles"
+				],
+				"summary":"Get profile by uid",
+				"description":"Get full profile user data description of given user's uid.",
+				"operationId":"getProfileByUid",
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profileUid",
+						"in":"path",
+						"description":"Uid of profile to return",
+						"required":true,
+						"type":"string"
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"Successful operation",
+						"schema":{
+							"$ref":"#/definitions/Profile"
+						}
+					},
+					"400":{
+						"description":"Invalid uid supplied"
+					},
+					"404":{
+						"description":"Profile for given uid not found"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"read:data"
+						]
+					}
+				]
+			}
+		}
+	},
+	"securityDefinitions":{
+		"catinder_auth":{
+			"type":"oauth2",
+			"authorizationUrl":"https://catinder-fake-url.ru/oauth/authorize",
+			"flow":"implicit",
+			"scopes":{
+				"read:data":"read your data",
+				"write:data":"modify data in your account"
+			}
+		}
+	},
+	"definitions":{
+		"Profile":{
+			"type":"object",
+			"properties":{
+				"uid":{
+					"type":"string",
+					"example":"E17D64B9-7604-4069-9B8C-B1ED37219F1B"
+				},
+				"name":{
+					"type":"string",
+					"example":"Пушистик"
+				},
+				"age":{
+					"type":"integer",
+					"format":"int32",
+					"example":3
+				},
+				"photosNames":{
+					"type":"array",
+					"items":{
+						"type":"string",
+						"example":"fluffy.jpg"
+					}
+				},
+				"shortDescription":{
+					"type":"string",
+					"example":"Люблю, когда меня гладят."
+				},
+				"extendedDescription":{
+					"type":"string",
+					"example":"Погладь меня, я весь чешуся."
+				}
+			}
+		}
+	}
+}
