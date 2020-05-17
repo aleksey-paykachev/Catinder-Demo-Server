@@ -11,6 +11,10 @@
 		{
 			"name":"Profiles",
 			"description":"User profiles."
+		},
+		{
+			"name":"Relationships",
+			"description":"User profiles."
 		}
 	],
 	"schemes":[
@@ -90,6 +94,131 @@
 					}
 				]
 			}
+		},
+		"/matches":{
+			"get":{
+				"tags":[
+					"Relationships"
+				],
+				"summary":"Get all matches",
+				"description":"Get all matched profiles for currently logged in user.",
+				"operationId":"getAllMatches",
+				"produces":[
+					"application/json"
+				],
+				"responses":{
+					"200":{
+						"description":"Successful operation",
+						"schema":{
+							"type":"array",
+							"items":{
+								"$ref":"#/definitions/Match"
+							}
+						}
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/relationships/set-like":{
+			"post":{
+				"tags":[
+					"Relationships"
+				],
+				"summary":"Set like",
+				"description":"Set like for provided profile's uid related to currently logged in user, and test for like mutuality.",
+				"operationId":"setLike",
+				"consumes":[
+					"application/json"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profileUid",
+						"in":"formData",
+						"description":"Uid of profile to set like to",
+						"required":true,
+						"type":"string"
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/SetLikeResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid uid supplied"
+					},
+					"404":{
+						"description":"Profile for given uid not found"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/relationships/set-dislike":{
+			"post":{
+				"tags":[
+					"Relationships"
+				],
+				"summary":"Set dislike",
+				"description":"Set dislike for provided profile's uid related to currently logged in user.",
+				"operationId":"setDislike",
+				"consumes":[
+					"application/json"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profileUid",
+						"in":"formData",
+						"description":"Uid of profile to set dislike to",
+						"required":true,
+						"type":"string"
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/SetDislikeResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid uid supplied"
+					},
+					"404":{
+						"description":"Profile for given uid not found"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
 		}
 	},
 	"securityDefinitions":{
@@ -98,8 +227,8 @@
 			"authorizationUrl":"https://catinder-fake-url.ru/oauth/authorize",
 			"flow":"implicit",
 			"scopes":{
-				"read:data":"read your data",
-				"write:data":"modify data in your account"
+				"read:data":"read data",
+				"write:data":"modify data related to current account"
 			}
 		}
 	},
@@ -124,7 +253,7 @@
 					"type":"array",
 					"items":{
 						"type":"string",
-						"example":"fluffy.jpg"
+						"example": "Fluffy_1.jpg"
 					}
 				},
 				"shortDescription":{
@@ -134,6 +263,72 @@
 				"extendedDescription":{
 					"type":"string",
 					"example":"Погладь меня, я весь чешуся."
+				}
+			}
+		},
+		"Message":{
+			"type":"object",
+			"properties":{
+				"date":{
+					"type":"string",
+					"format":"date-time",
+					"example":"2020-04-22T12:19:22+03:00"
+				},
+				"senderUid":{
+					"type":"string",
+					"example":"E17D64B9-7604-4069-9B8C-B1ED37219F1B"
+				},
+				"receiverUid":{
+					"type":"string",
+					"example":"195B63B8-5361-4014-8285-81D3763957ED"
+				},
+				"text":{
+					"type":"string",
+					"example":"Привет. Как у тебя дела?"
+				}
+			}
+		},
+		"Match":{
+			"type":"object",
+			"properties":{
+				"matchDate":{
+					"type":"string",
+					"format":"date-time",
+					"example":"2020-04-21T18:25:43+03:00"
+				},
+				"profile1":{
+					"type":"object",
+					"$ref":"#/definitions/Profile"
+				},
+				"profile2":{
+					"type":"object",
+					"$ref":"#/definitions/Profile"
+				},
+				"lastMessage":{
+					"type":"object",
+					"$ref":"#/definitions/Message"
+				}
+			}
+		},
+		"SetLikeResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
+				},
+				"isLikeMutual":{
+					"type":"boolean",
+					"example":true
+				}
+			}
+		},
+		"SetDislikeResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
 				}
 			}
 		}
