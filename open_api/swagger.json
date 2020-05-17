@@ -99,6 +99,144 @@
 				]
 			}
 		},
+		"/profile/register":{
+			"post":{
+				"tags":[
+					"Profiles"
+				],
+				"summary":"Register profile",
+				"description":"Create new user profile and return uid of the registered user.",
+				"operationId":"registerProfile",
+				"consumes":[
+					"application/json"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profile",
+						"in":"formData",
+						"description":"Registered profile data",
+						"required":true,
+						"type":"object",
+						"schema":{
+							"$ref":"#/definitions/Profile"
+						}
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/RegisterProfileResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid data supplied"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/profile/update":{
+			"put":{
+				"tags":[
+					"Profiles"
+				],
+				"summary":"Update profile",
+				"description":"Update profile data for currently logged in user.",
+				"operationId":"updateProfile",
+				"consumes":[
+					"application/json"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profile",
+						"in":"formData",
+						"description":"Updated profile data",
+						"required":true,
+						"type":"object",
+						"schema":{
+							"$ref":"#/definitions/Profile"
+						}
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/UpdateProfileResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid data supplied"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/profile/upload-image":{
+			"post":{
+				"tags":[
+					"Profiles"
+				],
+				"summary":"Upload image",
+				"description":"Upload an image for currently logged in user and return uploaded image name.",
+				"operationId":"uploadProfileImage",
+				"consumes":[
+					"multipart/form-data"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"imageFile",
+						"in":"formData",
+						"description":"Uploaded image file",
+						"required":true,
+						"type":"file"
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/UploadProfileImageResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid image data supplied"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
+		},
 		"/matches":{
 			"get":{
 				"tags":[
@@ -326,7 +464,7 @@
 					}
 				]
 			}
-		},
+		}
 	},
 	"securityDefinitions":{
 		"catinder_auth":{
@@ -414,6 +552,41 @@
 				"lastMessage":{
 					"type":"object",
 					"$ref":"#/definitions/Message"
+				}
+			}
+		},
+		"RegisterProfileResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
+				},
+				"uid":{
+					"type":"string",
+					"example":"195B63B8-5361-4014-8285-81D3763957ED"
+				}
+			}
+		},
+		"UpdateProfileResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
+				}
+			}
+		},
+		"UploadProfileImageResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
+				},
+				"imageName":{
+					"type":"string",
+					"example":"Barsik_1.jpg"
 				}
 			}
 		},
