@@ -14,7 +14,11 @@
 		},
 		{
 			"name":"Relationships",
-			"description":"User profiles."
+			"description":"Relationships between users."
+		},
+		{
+			"name":"Conversations",
+			"description":"Conversation messages between users."
 		}
 	],
 	"schemes":[
@@ -219,7 +223,110 @@
 					}
 				]
 			}
-		}
+		},
+		"/messages/{profileUid}":{
+			"get":{
+				"tags":[
+					"Conversations"
+				],
+				"summary":"Get messages",
+				"description":"Get all messages for conversation between given profile's uid and currently logged in user.",
+				"operationId":"getAllMessages",
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profileUid",
+						"in":"path",
+						"description":"Uid of collocutor profile to get messages for",
+						"required":true,
+						"type":"string"
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"Successful operation",
+						"schema":{
+							"type":"array",
+							"items":{
+								"$ref":"#/definitions/Message"
+							}
+						}
+					},
+					"400":{
+						"description":"Invalid uid supplied"
+					},
+					"404":{
+						"description":"Profile for given uid not found or haven't matched with current user yet"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"read:data"
+						]
+					}
+				]
+			}
+		},
+		"/messages/{profileUid}/send":{
+			"post":{
+				"tags":[
+					"Conversations"
+				],
+				"summary":"Send message",
+				"description":"Send message from currently logged in user to provided profile's uid.",
+				"operationId":"sendMessage",
+				"consumes":[
+					"application/json"
+				],
+				"produces":[
+					"application/json"
+				],
+				"parameters":[
+					{
+						"name":"profileUid",
+						"in":"path",
+						"description":"Uid of collocutor profile to send messages to",
+						"required":true,
+						"type":"string"
+					},
+					{
+						"name":"message",
+						"in":"formData",
+						"description":"Sended message body",
+						"required":true,
+						"type":"object",
+						"schema":{
+							"$ref":"#/definitions/Message"
+						}
+					}
+				],
+				"responses":{
+					"200":{
+						"description":"successful operation",
+						"schema":{
+							"$ref":"#/definitions/SendMessageResponse"
+						}
+					},
+					"400":{
+						"description":"Invalid uid supplied"
+					},
+					"404":{
+						"description":"Profile for given uid not found or haven't matched with current user yet"
+					}
+				},
+				"security":[
+					{
+						"catinder_auth":[
+							"write:data",
+							"read:data"
+						]
+					}
+				]
+			}
+		},
 	},
 	"securityDefinitions":{
 		"catinder_auth":{
@@ -324,6 +431,15 @@
 			}
 		},
 		"SetDislikeResponse":{
+			"type":"object",
+			"properties":{
+				"result":{
+					"type":"string",
+					"example":"success"
+				}
+			}
+		},
+		"SendMessageResponse":{
 			"type":"object",
 			"properties":{
 				"result":{
