@@ -1,5 +1,21 @@
 [
 	{
+		"uid": "5EC0E28D-9243-4B42-BB9B-568CB96387D8",
+		"name": "Тёмный рыцарь",
+		"age": 4,
+		"photosNames": ["Dark_Knight.jpg"],
+		"shortDescription": "Где детонатор?",
+		"extendedDescription": "Нет, серьёзно, ты не видел мой детонатор? Я с ним играл, и он куда-то закатился. Господи, хозяин меня убьёт."
+	},
+	{
+		"uid": "44C5D947-42D8-4C65-86E7-A7B2ECFC8436",
+		"name": "Дружок",
+		"age": 3,
+		"photosNames": ["Druzhok.jpg"],
+		"shortDescription": "Люблю убивать людей.",
+		"extendedDescription": "Ну, допустим: «Мяу!»"
+	},
+	{
 		"uid": "F59C2433-B0F5-4A84-B017-2212C1CFA7ED",
 		"name": "Барсик",
 		"age": 3,
@@ -46,6 +62,14 @@
 		"photosNames": ["Smushball_1.jpg", "Smushball_2.jpg", "Smushball_3.jpg", "Smushball_4.jpg"],
 		"shortDescription": "Мой хозяин мультимиллионер, и у меня есть всё, что я пожелаю.",
 		"extendedDescription": "А сейчас я желаю, чтобы мне почесали животик."
+	},
+	{
+		"uid": "2687FF37-2A63-46B5-BE1B-5D270ACFE83E",
+		"name": "Мистер Вискерс",
+		"age": 5,
+		"photosNames": ["Mr_Whiskers.jpg"],
+		"shortDescription": "Почему ты так на меня смотришь?",
+		"extendedDescription": "И кстати, как проходит твоя диета?"
 	},
 	{
 		"uid": "4D228D25-3602-4BD9-B1DC-CE0E1D1D974F",
