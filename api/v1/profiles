@@ -32,6 +32,14 @@
 		"extendedDescription": "Составишь мне компанию?"
 	},
 	{
+		"uid": "A457EEDF-C382-4214-9DF3-FEDDF4174BD0",
+		"name": "Клякса",
+		"age": 6,
+		"photosNames": ["Smudge_1.jpg", "Smudge_2.jpg", "Smudge_3.jpg", "Smudge_4.jpg", "Smudge_5.jpg"],
+		"shortDescription": "Не люблю овощи.",
+		"extendedDescription": "У меня почти полтора миллиона подписчиков в инстаграме, но большинство меня знает только по одному единственному мему. Разве это честно?"
+	},
+	{
 		"uid": "4F432871-DB35-4B7F-8E71-D51743B5BBEE",
 		"name": "Боб",
 		"age": 10,
