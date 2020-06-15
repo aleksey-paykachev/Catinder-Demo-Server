@@ -1,1 +1,30 @@
-[]
+[
+	{
+		"date": "2020-05-29T21:08:32+03:00",
+		"senderUid": "44C5D947-42D8-4C65-86E7-A7B2ECFC8436",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Мяу, мяу!",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-05-29T21:18:04+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "44C5D947-42D8-4C65-86E7-A7B2ECFC8436",
+		"text": "Зачем ты притворяешься? Все ведь знают, что ты не кот.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-05-29T21:24:05+03:00",
+		"senderUid": "44C5D947-42D8-4C65-86E7-A7B2ECFC8436",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": ":(",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-05-29T21:24:19+03:00",
+		"senderUid": "44C5D947-42D8-4C65-86E7-A7B2ECFC8436",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Я тоже хочу, чтобы меня погладили.",
+		"status": "viewed"
+	}
+]
