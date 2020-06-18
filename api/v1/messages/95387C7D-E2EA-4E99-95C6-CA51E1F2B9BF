@@ -3,6 +3,20 @@
 		"date": "2020-05-19T19:08:32+03:00",
 		"senderUid": "95387C7D-E2EA-4E99-95C6-CA51E1F2B9BF",
 		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Привет.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-05-19T23:04:26+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "95387C7D-E2EA-4E99-95C6-CA51E1F2B9BF",
+		"text": "Привет.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-05-20T14:08:42+03:00",
+		"senderUid": "95387C7D-E2EA-4E99-95C6-CA51E1F2B9BF",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
 		"text": "Будешь вместе со мной ждать конца света?",
 		"status": "viewed"
 	},

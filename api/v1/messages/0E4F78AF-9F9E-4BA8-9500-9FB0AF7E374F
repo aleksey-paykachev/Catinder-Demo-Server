@@ -1,9 +1,86 @@
 [
 	{
+		"date": "2020-06-14T16:26:21+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Привет.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T16:26:34+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "А ты правда Куклачёв?",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:02:01+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"text": "Привет.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:02:32+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"text": "Да, это я.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:03:44+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"text": "Я посмотрел твои фотографии. Классные у тебя костюмы.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:04:56+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Спасибо.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:28:42+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"text": "Ты бы отлично смотрелся в них на сцене.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T17:59:16+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Ээээ. В смысле?",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T18:01:22+03:00",
+		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"text": "Умеешь на передних лапах ходить?",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T18:26:26+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "Нет, не умею.",
+		"status": "viewed"
+	},
+	{
+		"date": "2020-06-14T18:27:16+03:00",
+		"senderUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
+		"receiverUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
+		"text": "А к чему эти вопросы?",
+		"status": "viewed"
+	},
+	{
 		"date": "2020-06-14T18:28:32+03:00",
 		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
 		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
-		"text": "Привет. Классные у тебя костюмы. Пойдёшь ко мне выступать?",
+		"text": "Пойдёшь ко мне выступать?",
 		"status": "viewed"
 	},
 	{
@@ -38,7 +115,7 @@
 		"date": "2020-06-14T19:06:02+03:00",
 		"senderUid": "F98FBF08-0C94-4C67-97CB-D55DE82A5F47",
 		"receiverUid": "0E4F78AF-9F9E-4BA8-9500-9FB0AF7E374F",
-		"text": "Жалко.\nНо если надумаешь – пиши.\n\nБуду ждать.",
+		"text": "Жалко.\nНо если надумаешь – пиши.",
 		"status": "viewed"
 	},
 	{
